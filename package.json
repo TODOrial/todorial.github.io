@@ -17,8 +17,11 @@
         "luxon": "^1.25.0",
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
+        "react-loading": "^2.0.3",
+        "react-paginate": "^6.5.0",
         "react-router-dom": "^5.2.0",
         "react-scripts": "3.4.3",
+        "react-toastify": "^6.0.8",
         "typescript": "~3.7.2"
     },
     "scripts": {
@@ -46,6 +49,7 @@
     },
     "devDependencies": {
         "@types/luxon": "^1.25.0",
+        "@types/react-paginate": "^6.2.1",
         "@types/react-router-dom": "^5.1.5"
     }
 }

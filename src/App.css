@@ -27,6 +27,7 @@
 .screen-route {
     width: 100%;
     padding-top: 20px;
+    margin-bottom: 100px;
 }
 
 .todo-list {
@@ -80,6 +81,12 @@
     flex-direction: column;
 }
 
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .space-between {
     justify-content: space-between;
 }
@@ -123,4 +130,25 @@
     background-color: #dc143c;
     border-radius: 5px;
     border: 1px solid #dc143c;
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-between;
+
+    list-style: none;
+}
+
+.pagination .button-link {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #bbb;
+}
+
+.pagination .active .button-link {
+    font-weight: bold;
+    background-color: #eee;
 }

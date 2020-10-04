@@ -2,7 +2,7 @@ import React from "react";
 import { DateTime } from "luxon";
 import { Link } from "react-router-dom";
 
-import TaskType from "../../types/TaskType";
+import { TaskType } from "../../types";
 
 function TaskCard({ taskData }: { taskData: TaskType }) {
     const { _id, title, description, createdAt } = taskData;
