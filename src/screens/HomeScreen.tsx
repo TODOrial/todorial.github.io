@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useUrlSearchParams } from "use-url-search-params";
 import ReactLoading from "react-loading";
 import ReactPaginate from "react-paginate";
@@ -15,27 +15,25 @@ function HomeScreen() {
     const [tasks, setTasks] = useState<TaskType[]>();
     const [navigation, setNavigation] = useState<NavigationType>({ offset: params.offset as number, limit: params.limit as number, last: 0 });
 
-    const fetchTasks = useCallback((offset: number, limit: number) => {
+    function fetchTasks(offset: number, limit: number) {
         setLoading(true);
+
         return api.get(`/tasks?offset=${offset}&limit=${limit}`).then((response) => {
             const { offset, limit, last, results } = response.data as PaginatedInfoType;
 
             setLoading(false);
             setTasks(results);
             setNavigation({ offset, limit, last });
+            setParams({ offset, limit: navigation.limit });
         });
-    }, []);
+    }
 
-    useEffect(() => {
-        fetchTasks(navigation.offset, navigation.limit);
-    }, [fetchTasks, navigation.offset, navigation.limit]);
-
-    function handlePageClick(data: any) {
+    // is called at first render because ReactPaginate component has disableInitialCallback prop setted to false
+    function handlePageChange(data: any) {
         const selected = data.selected;
         const offset = Math.ceil(selected * navigation.limit);
 
         fetchTasks(offset, navigation.limit);
-        setParams({ offset, limit: navigation.limit });
     }
 
     return (
@@ -55,11 +53,12 @@ function HomeScreen() {
             )}
 
             <ReactPaginate
-                initialPage={Math.max(1, navigation.offset / navigation.limit)}
+                disableInitialCallback={false}
+                initialPage={navigation.offset / navigation.limit}
                 pageCount={Math.max(1, Math.ceil(navigation.last / navigation.limit))}
                 pageRangeDisplayed={4}
                 marginPagesDisplayed={1}
-                onPageChange={handlePageClick}
+                onPageChange={handlePageChange}
                 breakLabel={"..."}
                 nextLabel={"Próximo"}
                 previousLabel={"Voltar"}
