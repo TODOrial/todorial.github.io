@@ -12,6 +12,7 @@
         "@types/react": "^16.9.0",
         "@types/react-dom": "^16.9.0",
         "axios": "^0.20.0",
+        "cross-env": "^7.0.2",
         "gh-pages": "^3.1.0",
         "luxon": "^1.25.0",
         "react": "^16.13.1",
@@ -23,7 +24,7 @@
     "scripts": {
         "predeploy": "yarn run build",
         "deploy": "gh-pages -d build",
-        "start": "react-scripts start",
+        "start": "cross-env REACT_ENV=development react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject"

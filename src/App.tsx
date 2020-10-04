@@ -5,7 +5,9 @@ import "./App.css";
 
 import { HomeScreen, EditScreen, CreateScreen } from "./screens";
 
-const REACT_ENV: string = process.env.REACT_ENV || "development";
+const REACT_ENV: string = process.env.REACT_ENV || "production";
+
+console.log(REACT_ENV);
 
 function App() {
     return (

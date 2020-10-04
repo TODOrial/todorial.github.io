@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const REACT_ENV: string = process.env.REACT_ENV || "development";
+const REACT_ENV: string = process.env.REACT_ENV || "production";
 
 const baseURLs: { [key: string]: string } = {
     development: "http://localhost:5000",
