@@ -1,0 +1,111 @@
+.App {
+    width: 100%;
+    max-width: 500px;
+
+    margin: 0 auto;
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.app-title {
+    margin: 30px 0;
+    color: #333;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.screen-route {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.todo-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.task-card {
+    flex: 1;
+
+    margin: 10px 0;
+    padding: 10px 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 5px;
+    border: 1px solid #bbb;
+
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.task-card > .task-title {
+    color: #333;
+}
+
+.task-card > .task-description {
+    color: #555;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.input-text {
+    padding: 5px;
+    margin: 10px 0;
+
+    font-size: 1rem;
+
+    border-radius: 5px;
+    border: 1px solid #bbb;
+}
+
+.create-task-button {
+    padding: 5px;
+    margin: 10px 0;
+
+    cursor: pointer;
+
+    font-size: 1rem;
+
+    background-color: none;
+    border-radius: 5px;
+    border: 1px solid #bbb;
+}
+
+.delete-task-button {
+    padding: 5px;
+    margin: 10px 0;
+
+    cursor: pointer;
+
+    font-size: 1rem;
+    color: #fff;
+
+    background-color: #dc143c;
+    border-radius: 5px;
+    border: 1px solid #dc143c;
+}
