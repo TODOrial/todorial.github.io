@@ -15,9 +15,9 @@ function TaskCard({ taskData }: { taskData: TaskType }) {
         <Link className="task-card" to={`/${_id}/edit`}>
             {/* <p>{_id}</p> */}
             <h4 className="task-title">{title}</h4>
-            <div className="row space-between">
+            <div className="row space-between word-break-all">
                 <p className="task-description">{description}</p>
-                <p>{updatedAtDate.toFormat("ff")}</p>
+                <p className="task-updated-at-date">{updatedAtDate.toFormat("ff")}</p>
             </div>
             {/* <p>{updatedAt}</p> */}
         </Link>

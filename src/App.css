@@ -52,10 +52,18 @@
 
 .task-card > .task-title {
     color: #333;
+    word-break: break-all;
 }
 
-.task-card > .task-description {
+.task-card .task-description {
+    flex: 1;
     color: #555;
+    word-break: break-all;
+}
+
+.task-card .task-updated-at-date {
+    color: #555;
+    word-break: keep-all;
 }
 
 .row {
@@ -71,6 +79,10 @@
 
 .space-between {
     justify-content: space-between;
+}
+
+.word-break-all {
+    word-break: break-all;
 }
 
 .input-text {
