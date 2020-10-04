@@ -52,13 +52,13 @@
 
 .task-card > .task-title {
     color: #333;
-    word-break: break-all;
+    word-break: break-word;
 }
 
 .task-card .task-description {
     flex: 1;
     color: #555;
-    word-break: break-all;
+    word-break: break-word;
 }
 
 .task-card .task-updated-at-date {
@@ -82,7 +82,7 @@
 }
 
 .word-break-all {
-    word-break: break-all;
+    word-break: break-word;
 }
 
 .input-text {
