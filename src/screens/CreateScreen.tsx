@@ -32,6 +32,8 @@ function CreateScreen() {
                     const errorData = error.response.data;
 
                     toast.error(`${status} - ${errorData.error}`);
+                } else {
+                    toast.error(`Houve um problema ao tentar criar a tarefa... Por favor, tente novamente.`);
                 }
             });
     }

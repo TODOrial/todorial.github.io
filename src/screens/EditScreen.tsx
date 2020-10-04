@@ -37,6 +37,8 @@ function EditScreen() {
                     const errorData = error.response.data;
 
                     toast.error(`${status} - ${errorData.error}`);
+                } else {
+                    toast.error(`Houve um problema ao tentar acessar a tarefa... Por favor, verifique as informações.`);
                 }
             });
     }, [id, history]);
@@ -73,6 +75,8 @@ function EditScreen() {
                     const errorData = error.response.data;
 
                     toast.error(`${status} - ${errorData.error}`);
+                } else {
+                    toast.error(`Houve um problema ao tentar salvar as aterações... Por favor, tente novamente.`);
                 }
             })
             .then(() => {
@@ -97,6 +101,8 @@ function EditScreen() {
                     const errorData = error.response.data;
 
                     toast.error(`${status} - ${errorData.error}`);
+                } else {
+                    toast.error(`Houve um problema ao tentar remover a tarefa... Por favor, tente novamente.`);
                 }
             });
     }
