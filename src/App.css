@@ -30,6 +30,8 @@
 
 .todo-list {
     width: 100%;
+    margin-bottom: 50px;
+
     display: flex;
     flex-direction: column;
 }
