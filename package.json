@@ -50,6 +50,7 @@
     "devDependencies": {
         "@types/luxon": "^1.25.0",
         "@types/react-paginate": "^6.2.1",
-        "@types/react-router-dom": "^5.1.5"
+        "@types/react-router-dom": "^5.1.5",
+        "use-url-search-params": "^2.3.13"
     }
 }

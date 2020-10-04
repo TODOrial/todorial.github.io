@@ -10537,6 +10537,11 @@ url@^0.11.0:
     punycode "1.3.2"
     querystring "0.2.0"
 
+use-url-search-params@^2.3.13:
+  version "2.3.13"
+  resolved "https://registry.yarnpkg.com/use-url-search-params/-/use-url-search-params-2.3.13.tgz#016009c8879fc7f631a58cdea572c5ded821bf35"
+  integrity sha512-sib83ss6rUFKwDNuCwO1q1irWl9Y5XcrI8uUtNhem+CvAYXwyHiG5+Mkq6awQ6dNV3CqbnLfwgkpTFwWrzKhww==
+
 use@^3.1.0:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/use/-/use-3.1.1.tgz#d50c8cac79a19fbc20f2911f56eb973f4e10070f"
