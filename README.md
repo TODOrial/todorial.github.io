@@ -3,7 +3,7 @@
 Task management application It allows users to manage their tasks.
 
 `Web preview`
-![](build/static/images/web-preview.gif)
+![](web-preview.gif)
 
 ## Functionalities
 
