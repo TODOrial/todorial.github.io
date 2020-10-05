@@ -5,6 +5,18 @@ Task management application It allows users to manage their tasks.
 `Web preview`
 ![](build/static/images/web-preview.gif)
 
+## Functionalities
+
+✔️ Read tasks
+
+✔️ Add tasks
+
+✔️ Edit tasks
+
+✔️ Delete tasks
+
+✔️ Change notifications
+
 ## Deployment in
 https://todorial.github.io
 
@@ -17,9 +29,9 @@ https://todorial.github.io
 
 ## Meta
 
-Bruno Silva - [Portfolio](https://brunos3d.github.io/) - bruno3dcontato@gmail.com
+Bruno Silva - [Portfólio](https://brunos3d.github.io/) - bruno3dcontato@gmail.com
 
-Gabriel de Jesus – [Portfolio](https://www.gabrieldesenvolvedor.com/) – oi@gabrieldesenvolvedor.com
+Gabriel de Jesus – [Portfólio](https://www.gabrieldesenvolvedor.com/) – oi@gabrieldesenvolvedor.com
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
