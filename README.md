@@ -2,9 +2,6 @@
 
 Task management application It allows users to manage their tasks.
 
-`Web preview`
-![](web-preview.gif)
-
 ## Functionalities
 
 ✔️ Read tasks
