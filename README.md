@@ -17,9 +17,9 @@ https://todorial.github.io
 
 ## Meta
 
-Bruno Silva - [My portfolio](https://brunos3d.github.io/) - bruno3dcontato@gmail.com
+Bruno Silva - [Portfolio](https://brunos3d.github.io/) - bruno3dcontato@gmail.com
 
-Gabriel de Jesus – [My portfolio](https://www.gabrieldesenvolvedor.com/) – oi@gabrieldesenvolvedor.com
+Gabriel de Jesus – [Portfolio](https://www.gabrieldesenvolvedor.com/) – oi@gabrieldesenvolvedor.com
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
